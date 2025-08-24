@@ -1,23 +1,27 @@
 import React from 'react';
 import { Card, Button } from "react-bootstrap";
 
-const CardColor = () => {
+const CardColor = ({color, onDelete}) => {
     return (
-    <Card>
-      <Card.Body>
-        <div className="d-flex justify-content-between align-items-center">
-          <Card.Title className="mb-0">NombreColor</Card.Title>
+      <Card className="shadow-sm h-100">
+      <Card.Body className="d-flex flex-column justify-content-between">
+        <div className="d-flex justify-content-between align-items-center mb-3">
+          <Card.Title className="mb-0">{color.name}</Card.Title>
           <div
             style={{
               width: "30px",
               height: "30px",
-              backgroundColor: "tomato", // color fijo de ejemplo
+              backgroundColor: color.name,
               border: "1px solid #ccc",
               borderRadius: "4px",
             }}
-          ></div>
+          />
         </div>
-        <Button variant="danger" size="sm" className="mt-3">
+        <Button
+          variant="danger"
+          size="sm"
+          onClick={() => onDelete(color.id)}
+        >
           Borrar
         </Button>
       </Card.Body>

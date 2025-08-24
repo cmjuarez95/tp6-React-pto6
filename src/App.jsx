@@ -12,7 +12,7 @@ function App() {
     <>
     <main className='container'>
       <Formulario></Formulario>
-      <ListaCards></ListaCards>
+      
     </main>
       <Footer></Footer>
     </>
