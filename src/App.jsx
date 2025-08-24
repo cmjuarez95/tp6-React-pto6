@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Footer from './components/Footer.jsx'
 import Formulario from './components/Formulario.jsx'
+import ListaCards from './components/ListaCards.jsx'
 
 function App() {
   
@@ -10,8 +11,8 @@ function App() {
   return (
     <>
     <main className='container'>
-      <p>Hola mundo</p>
       <Formulario></Formulario>
+      <ListaCards></ListaCards>
     </main>
       <Footer></Footer>
     </>

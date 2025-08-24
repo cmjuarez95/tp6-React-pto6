@@ -7,3 +7,14 @@
 main{
     flex-grow: 1;
 }
+
+
+.form_color{
+  background-color: rgb(15, 84, 87);
+}
+
+.color_ejemplo{
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
